@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  margin: 0 0 0 0 ;
+  padding: 0;
+}
+
+:root {
+  --main-color: #678c89
+}
+
+body{
+  line-height: 1.4;
+  background-color: #fcfcfc;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid var(--main-color);
+}
+
+.todo-item{
+  list-style-type: none;
+  padding: 10px 15px;
+  border-top: 1px solid var(--main-color);
+}
+
+.todo-item input {
+  margin-right: 15px;
+}
+
+.todo-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+  height: 18px;
+  display: inline-block;
+}
+
+.completed {
+  font-style: italic;
+  color: #c5e2d2;
+  text-decoration: line-through;
+}
+
+.header-container{
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.header-title{
+  font-size: 25px;
+  line-height: 1.447rem;
+  margin: 0;
+}
+
+.btn-style {
+  background: #d35e0f;
+  color: #fff;
+  border: 1px solid #d35e0f;
+  padding: 3px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  outline: none;
+}
+
+/* Form add todo  */
+.form-container{
+  display: flex;
+  width: 100%;
+}
+.input-text {
+  flex: 8;
+  font-size: 14px;
+  padding: 6px 15px;
+  background: rgba(103, 140, 137, 0.65);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  width: 80%;
+}
+
+.input-text::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.input-submit{
+  flex: 2;
+  border: none;
+  background: #678c89;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  width: 20%;
+  outline: none;
+}
+
+/* Footer  */
+.footer {
+  height: 50px;
+  background: var(--main-color);
+  color: white;
+  position: relative;
+}
+.vertical-center {
+  margin: 0 0 0 10px;
+  position: absolute;
+  bottom: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.dot{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.red {
+  background-color: #ff0000;
+}
+.blue{
+  background-color: #0000ff;
+}
+.gray{
+  background-color: #678c89;
+}
